@@ -522,8 +522,8 @@ npx ts-node server.ts
 
 ## 🧑‍🧑‍🧒‍🧒Developers
 
-* 민은빈 ([gitID or 블로그ID]여기에 개인 git/ 블로그 url 넣으시면 될거같아요!!)
-* 김수현 ([gitID or 블로그ID]여기에 개인 git/ 블로그 url 넣으시면 될거같아요!!)
-* 박영빈 ([gitID or 블로그ID]여기에 개인 git/ 블로그 url 넣으시면 될거같아요!!)
-* 윤지은 ([gitID or 블로그ID]여기에 개인 git/ 블로그 url 넣으시면 될거같아요!!)
-* 하태웅 ([gitID or 블로그ID]여기에 개인 git/ 블로그 url 넣으시면 될거같아요!!)
+* 민은빈 
+* 김수현 
+* 박영빈 
+* 윤지은
+* 하태웅
