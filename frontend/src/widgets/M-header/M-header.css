@@ -1,0 +1,47 @@
+.header-M-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: -5px;
+  }
+  
+  .title-M-h {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 300px;
+  }
+  
+  .user-info-M-h {
+    display: flex;
+    align-items: center;
+  }
+  
+  .username-M-h {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .logout-button-M-h {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-button-M-h:hover {
+    background-color: #333;
+  }
+  
+  .icon-M-h {
+    margin-right: 5px;
+  }

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+body {
+  background-color: #F9FAFB;
+  font-family: Arial, sans-serif;
+}
+
+.l_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.l_title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px; /* 위아래 간격 확대 */
+  margin-top: -60px;
+  color: #000000;
+  font-family: 'Rubik Bubbles', sans-serif;
+}
+
+.l_subtitle {
+  font-size: 24px;
+  margin-bottom: 30px; /* 위아래 간격 확대 */
+  margin-top: 0px;
+  text-align: center;
+  color: #000000;
+}
+
+.l_box {
+  width: 400px; /* 컨테이너 너비를 고정 */
+  padding: 30px; /* 내부 간격 확대 */
+  border-radius: 8px;
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 모든 요소를 중앙 정렬 */
+}
+
+.l_form {
+  width: 100%; /* 폼이 컨테이너의 너비를 채움 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 각 입력 필드 간의 간격 확대 */
+}
+
+.l_input {
+  width: 100%; /* 입력 필드가 폼의 너비를 채움 */
+  padding: 12px; /* 입력 필드 내부 간격 확대 */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* 글자 크기 설정 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함해 크기 계산 */
+}
+
+.l_button {
+  width: 100%; /* 버튼이 폼의 너비를 채움 */
+  padding: 12px; /* 버튼 내부 간격 확대 */
+  margin-top: 20px; /* 버튼 위아래 간격 추가 */
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px; /* 글자 크기 설정 */
+  cursor: pointer;
+  box-sizing: border-box; /* 크기 계산 정확히 */
+}
+
+.l_button:hover {
+  background-color: #002244;
+}
+
+.l_kakao-button {
+  width: 100%; /* 컨테이너 너비에 맞춤 */
+  padding: 12px; /* 버튼 내부 간격 확대 */
+  margin-top: 10px; /* 위아래 간격 추가 */
+  background-color: #ffdd00;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px; /* 글자 크기 설정 */
+  cursor: pointer;
+  box-sizing: border-box; /* 크기 계산 정확히 */
+}
+
+.l_kakao-button:hover {
+  background-color: #e6c800;
+}
+
+.l_alternative-button {
+  width: 100%; /* 컨테이너 너비에 맞춤 */
+  padding: 12px; /* 버튼 내부 간격 확대 */
+  margin-top: 10px; /* 위아래 간격 추가 */
+  background-color: #FFFFFF;
+  color: #374151;
+  border: 1px solid #D1D5DB; /* 스트로크 설정 */
+  border-radius: 4px;
+  font-size: 14px; /* 글자 크기 설정 */
+  cursor: pointer;
+  box-sizing: border-box; /* 크기 계산 정확히 */
+}
+
+.l_alternative-button:hover {
+  background-color: #F3F4F6;
+}
+
+.l_error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.l_links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* 링크 위아래 간격 추가 */
+  width: 100%; /* 링크의 가로 길이를 컨테이너와 동일하게 설정 */
+}
+
+.l_link {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px; /* 글자 크기 설정 */
+}
+
+.l_link:hover {
+  text-decoration: underline;
+}
+
+.l_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+  width: 310px;
+}
+
+.l_modal_content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.l_modal_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.l_modal h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+.l_modal p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.l_modal_button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.l_modal_button:hover {
+  background-color: #002244;
+}
+
+.l_modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+  z-index: 999; /* 모달보다 낮고 다른 요소보다 높은 z-index */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l_modal_icon {
+  width: 60px; /* 원하는 너비로 설정 */
+  height: 60px; /* 원하는 높이로 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  display: block;
+  border-radius: 50%; /* 필요 시 원형 아이콘처럼 보이게 */
+  margin-top: 10px;
+}

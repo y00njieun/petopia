@@ -1,0 +1,213 @@
+/* 전체 페이지 스타일 */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  /* height: 200px; */
+  /* padding: 100px; */
+}
+
+.bannerSize{
+  width: 1440px;
+  height: auto;
+  
+}
+
+/* 정렬 컨트롤 */
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.controls-container select {
+  width: auto;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.controls-container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* 상품 목록 */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 0 5px;
+  margin: 0;
+}
+
+/* 상품 카드 */
+.products .product-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-bottom: 15px;
+  background: white;
+  transition: transform 0.2s, box-shadow 0.2s ease-in-out;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 상품 이미지 */
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+/* 상품 정보 */
+.product-info {
+  padding: 10px;
+  text-decoration: none;
+}
+.product-info .rating {
+  display: flex;
+  margin: 5px 0;
+  color: yellow;
+}
+
+.product-info h3 {
+  display: flex;
+  font-size: 20px;
+  margin: 0 auto 0 0;
+}
+.product-title {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+}
+.product-info .price {
+  display: flex;
+  font-size: 12px;
+  text-decoration: line-through;
+  color: gray;
+  margin: 0;
+}
+
+.product-info .discount {
+  display: flex;
+  font-size: 15px;
+  color: black;
+  font-weight: 700;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+/* 할인율 배지 */
+.discount-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* 위시리스트 하트 버튼 */
+.wishlist-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.wishlist-btn .heart-icon {
+  stroke: red;
+  fill: none;
+  width: 26px;
+  height: 26px;
+  transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.wishlist-btn.active .heart-icon {
+  fill: red;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.2);
+}
+
+/* 무료 배송 라벨 */
+.free-shipping {
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  ;
+}
+
+.remove-all-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px
+}
+
+.remove-all-btn:hover {
+  background-color: #cc0000;
+}
+
+.save-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px
+}
+
+.save-btn:hover {
+  background-color: #1f2d3d;
+}

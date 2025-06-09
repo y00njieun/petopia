@@ -1,0 +1,18 @@
+.wishlist-page{
+  margin-bottom: 100px;
+}
+
+.title-togle {
+  display: flex ;
+  justify-content: space-between;
+  margin: 40px 60px 10px 60px;
+}
+
+.title-togle h2 {
+  font-size: 30px;
+}
+
+.togle-size {
+  display: flex ;
+  align-items: center ;
+}

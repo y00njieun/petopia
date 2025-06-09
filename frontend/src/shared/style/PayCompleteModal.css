@@ -1,0 +1,153 @@
+.PayC-modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+/* 아이콘 스타일 */
+.PayC-modal-icon {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.PayC-modal-icon img {
+  display: block;
+  margin: auto;
+}
+
+/* 제목 스타일 */
+.PayC-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* 설명 텍스트 스타일 */
+.PayC-modal-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* 박스 섹션 스타일 */
+.PayC-modal-section {
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 16px;
+}
+
+/* 구분선 스타일 */
+.PayC-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 40px 0;
+}
+
+/* 섹션 텍스트 정렬 */
+.PayC-modal-section-row {
+  display: flex;
+  gap: 200px;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.PayC-section-left {
+  text-align: left;
+  margin-left: 170px;
+}
+
+.PayC-section-right {
+  text-align: right;
+}
+
+.PayC-section-label {
+  color: #555;
+  text-align: center;
+  display: block;
+}
+
+.PayC-section-value {
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+/* 배송 정보 제목 왼쪽 정렬 */
+.PayC-section-title.PayC-left-align {
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+  margin-top: -50px;
+  margin-left: 15px;
+}
+
+/* 배송 정보 박스 스타일 */
+.PayC-modal-box {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  width: 670px;
+  margin-top: 10px;
+}
+
+/* 섹션 정보 스타일 */
+.PayC-section-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* 버튼 스타일 */
+.PayC-modal-actions.PayC-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.PayC-modal-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.PayC-modal-button.PayC-primary {
+  background-color: #3a5372;
+  color: #fff;
+  border: none;
+}
+
+.PayC-modal-button.PayC-primary:hover {
+  background-color: #324c66;
+}
+
+.PayC-modal-button.PayC-secondary {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.PayC-modal-button.PayC-secondary:hover {
+  background-color: #f0f0f0;
+}

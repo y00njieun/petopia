@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+/* 헤더 스타일 */
+.Header-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  height: 35px;
+}
+
+.Header-logo {
+  font-family: 'Rubik Bubbles', cursive;
+  font-size: 30px;
+  color: #000;
+  margin-right: 200px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.Header-nav {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.Header-nav-link {
+  font-family: 'Rubik Bubbles', cursive;
+  font-size: 23px;
+  color: #000;
+  text-decoration: none;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  border: transparent;
+}
+
+.Header-nav-link:hover {
+  background-color: #FFFFFF;
+}
+
+.Header-nav-dropdown {
+  position: relative;
+}
+
+.Header-nav-dropdown .Header-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.Header-nav-dropdown:hover .Header-dropdown-content {
+  display: block;
+}
+
+.Header-dropdown-content a {
+  display: block;
+  padding: 13px 12px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.Header-dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.Header-search-cart-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.Header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.Header-icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.Header-icon-button:hover {
+  color: #007bff;
+}
+
+.Header-icon-image {
+  width: 70px;
+  height: 70px;
+  margin-left: -5px;
+}
+
+.Header-search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Header-search-icon {
+  position: absolute;
+  left: -20px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+.Header-search-input {
+  padding: 8px 8px 8px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 250px;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 0px;
+  margin-left: -30px;
+}
+
+.Header-search-input:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+}
+
+.Header-search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.Header-search-result-item {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.Header-search-result-item:hover {
+  background-color: #f9f9f9;
+}
+
+.Header-notification {
+  position: relative;
+}
+
+.Header-notification-badge {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 15px;
+  height: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 반응형 미디어 쿼리 */
+@media screen and (max-width: 1024px) {
+  .Header-icons {
+    gap: 10px;
+  }
+
+  .Header-icon-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Header-logo {
+    margin-right: 100px;
+    font-size: 25px;
+  }
+
+  .Header-nav {
+    gap: 50px;
+  }
+
+  .Header-nav-link {
+    font-size: 20px;
+    padding: 8px 15px;
+  }
+
+  .Header-search-input {
+    width: 250px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header-icons {
+    gap: 5px;
+  }
+
+  .Header-icon-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Header-logo {
+    font-size: 20px;
+    margin-right: 50px;
+  }
+
+  .Header-nav {
+    gap: 20px;
+  }
+
+  .Header-nav-link {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  /* 기본적으로 검색창 숨김 */
+  .Header-search-container {
+    display: none;
+  }
+
+  /* 검색 아이콘을 클릭하면 검색창 표시 */
+  .Header-search-visible {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000;
+  }
+
+  .Header-search-input {
+    width: 200px;
+    font-size: 14px;
+  }
+}

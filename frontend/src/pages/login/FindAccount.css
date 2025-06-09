@@ -1,0 +1,208 @@
+.find-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* 부모 컨테이너가 화면을 채우도록 유지 */
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  
+  .find-box {
+    width: 500px; /* 가로 길이를 늘림 */
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #FFFFFF; /* 배경색 설정 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 살짝 그림자 추가 */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto; /* 내용물에 맞게 높이 조정 */
+  }
+    
+  .find-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #002244;
+  }
+  
+  .find-tabs {
+    display: flex;
+    position: relative; /* 회색 선 추가를 위한 상대 위치 */
+    margin-bottom: 20px;
+  }
+  
+  .find-tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    width: 200px;
+  }
+  
+  .find-tab.active {
+    border-bottom: 2px solid #003366;
+    font-weight: bold;
+  }
+  
+  .find-tabs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #D1D5DB; /* 회색 선 색상 */
+  }
+  
+  .find-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 각 입력 필드 간 간격 증가 */
+  }
+  
+  .find-label {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 0px; /* 라벨과 필드 사이 간격 */
+    text-align: left; /* 라벨 왼쪽 정렬 */
+  }
+  
+  .find-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D1D5DB; /* 기본 테두리 */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: #374151;
+    box-sizing: border-box;
+    outline: none; /* 포커스 시 파란 테두리 제거 */
+    transition: border-color 0.3s;
+    margin-top: 5px;
+  }
+  
+  .find-input:focus {
+    border-color: #003366; /* 포커스 시 테두리 색상 */
+    box-shadow: none;
+  }
+  
+  .find-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .find-button:hover {
+    background-color: #002244;
+  }
+  
+  .find-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .find-link {
+    text-decoration: none;
+    color: #003366;
+  }
+  
+  .find-link:hover {
+    text-decoration: underline;
+  }
+
+  .find-divider {
+    color: #D1D5DB;
+    margin: 0 5px;
+  }
+
+  /* 에러 메시지 스타일 */
+  .find-error {
+    color: #dc2626;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #fee2e2;
+    border-radius: 4px;
+  }
+
+  /* 성공 메시지 스타일 */
+  .find-success {
+    color: #059669;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #d1fae5;
+    border-radius: 4px;
+  }
+
+  /* 모달 스타일 */
+  .find-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .find-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .find-container {
+      padding: 20px;
+      margin-top: 100px;
+    }
+
+    .find-box {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .find-tab {
+      width: auto;
+    }
+  }
+  

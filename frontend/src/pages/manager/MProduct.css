@@ -1,0 +1,158 @@
+/* 전체 레이아웃 */
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.product-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.product-container {
+  flex-grow: 1;
+  padding: 24px;
+  width: calc(100% - 250px);
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+/* 헤더 및 버튼 */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.new-product-button {
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-content-box {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 검색 바 */
+.product-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.product-input, .product-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-search-button {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* 테이블 스타일 */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-table th {
+  background: #f8f9fa;
+}
+
+/* 상태 스타일 */
+.status-green {
+  background: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-orange {
+  background: #fd7e14;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* 버튼 스타일 */
+.mproduct-edit-button {
+  color: #007bff;
+  border: none;
+  padding: 8px 24px;
+  background: none;
+  cursor: pointer;
+}
+.mproduct-edit-button:hover {
+  color:white;
+  background-color: #007bff;
+  border: none;
+  padding: 8px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button {
+  color: #dc3545;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.pagination-button.active {
+  background: #ddd;
+}
+
+.M-titleName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.M-img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

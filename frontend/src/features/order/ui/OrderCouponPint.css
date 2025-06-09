@@ -1,0 +1,70 @@
+.orderCouponPointContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.couponContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selectCoupon{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pointContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pointBody{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.pointBody input{
+  width: 245px;
+  height: 42px;
+  padding: 8px 12px;
+  gap: 0px 10px;
+  align-content: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)), #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.pointBody .pointBodyTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* text */
+.orderCouponPointContainer{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.selectCouponTitle{
+  font-weight: 500;
+  color: #374151;
+}
+.couponText{
+  color: #16A34A;
+}
+.pointTitle{
+  font-weight: 500;
+  color: #374151;
+}
+.remainPoint{
+  color: #6B7280;
+}
+.errorMessage{
+  color: red;
+}
